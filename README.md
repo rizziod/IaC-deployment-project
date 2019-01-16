@@ -7,6 +7,7 @@ First I looked at the theory behind IaC (as being cubed up all day has its limit
 Advantage of Dockers(Containers):
 
 They have some significant advantages over VMs in the Infrastructure as Code model:
+
 •	Containers are much faster to start than VMs. Container starts in seconds, while a VM takes minutes. It's important when you're doing an update/rollback or scaling your service.
 
 •	Containers enable better utilization of compute resources. Very often computer resources of a VM running an application are underutilized. Launching multiple instances of the same application on one VM has a lot of difficulties: different application versions may need different versions of dependent libraries, init scripts require special configuration. With containers, running multiple instances of the same application on the same machine is easy and doesn't require any system configuration.
