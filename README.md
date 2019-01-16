@@ -3,3 +3,9 @@ Before I started this project I assumed that it would be a simple task of creati
 
 Findings:
 First I looked at the theory behind IaC (as being cubed up all day has its limitations). ITIL was one of the first thoughts that came to mind. How to accomplish the project by following some basic ITIL foundations. This project would be creating a uniform way of building and breaking down said VM’s in a uniform way. The thought process ehind this is removing the risk of making mistakes manually creating VM’s on a needed basis. Also capacity management can be effected by always manually creating VM’s. By setting up and following SLA's for autodeployment you will be ensuring current and future business requirements are met in a cost effective manner. 
+
+Advantage of Dockers(Containers)
+They have some significant advantages over VMs in terms of implementing Immutable Infrastructure model:
+•	Containers are much faster to start than VMs. Container starts in seconds, while a VM takes minutes. It's important when you're doing an update/rollback or scaling your service.
+•	Containers enable better utilization of compute resources. Very often computer resources of a VM running an application are underutilized. Launching multiple instances of the same application on one VM has a lot of difficulties: different application versions may need different versions of dependent libraries, init scripts require special configuration. With containers, running multiple instances of the same application on the same machine is easy and doesn't require any system configuration.
+•	Containers are more lightweight than VMs. Container images are much smaller than machine images, because they don't need a full operating system in order to run. In fact, a container image can include just a single binary and take just a few MBs of your disk space. This means that we need less space for storing the images and the process of distributing images goes faster.
