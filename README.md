@@ -8,8 +8,8 @@ Advantage of Dockers(Containers):
 
 They have some significant advantages over VMs in the Infrastructure as Code model:
 
-•	Containers are much faster to start than VMs. Container starts in seconds, while a VM takes minutes. It's important when you're doing an update/rollback or scaling your service.
+•	Containers are much faster to start than VMs. Container starts in seconds, while a VM takes minutes. IThis is an important aspect for the sevice you are trying to provide.
 
-•	Containers enable better utilization of compute resources. Very often computer resources of a VM running an application are underutilized. Launching multiple instances of the same application on one VM has a lot of difficulties: different application versions may need different versions of dependent libraries, init scripts require special configuration. With containers, running multiple instances of the same application on the same machine is easy and doesn't require any system configuration.
+•	Containers can better utilize compute resources. Most computer resources of a VM running an application are underutilized. Launching multiple instances of the same application on one VM has a lot of difficulties: different application versions may need different versions of dependent libraries, init scripts require special configuration. With containers, running multiple instances of the same application on the same machine is easy and doesn't require any system configuration.
 
 •	Containers are more lightweight than VMs. Container images are much smaller than machine images, because they don't need a full operating system in order to run. In fact, a container image can include just a single binary and take just a few MBs of your disk space. This means that we need less space for storing the images and the process of distributing images goes faster.
